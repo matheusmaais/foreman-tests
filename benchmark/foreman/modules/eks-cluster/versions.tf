@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 1.5.0"
+  required_version = ">= 1.5"
 
   required_providers {
     aws = {
@@ -9,6 +9,10 @@ terraform {
     tls = {
       source  = "hashicorp/tls"
       version = "~> 4.0"
+    }
+    kubernetes = {
+      source  = "hashicorp/kubernetes"
+      version = "~> 2.0"
     }
   }
 }
